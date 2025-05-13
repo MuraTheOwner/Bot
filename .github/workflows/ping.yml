@@ -40,12 +40,6 @@ jobs:
       - name: Fix file permissions
         run: |
           chmod +x bot.py
-      - name: sudo
-        run: |
-          sudo su
-      - name: run screen
-        run: |
-          apt install screen -y
 
       # Chạy bot.py
       - name: Run the bot
