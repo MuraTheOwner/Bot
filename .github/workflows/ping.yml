@@ -36,15 +36,14 @@ jobs:
       - name: Check file permissions
         run: |
           ls -l bot.py  # Kiểm tra quyền truy cập của bot.py
-
       # Nếu cần, bạn có thể sửa quyền của bot.py
       - name: Fix file permissions
         run: |
           chmod +x bot.py
-        - name: sudo
+      - name: sudo
         run: |
           sudo su
-        - name: run screen
+      - name: run screen
         run: |
           apt install screen -y
 
