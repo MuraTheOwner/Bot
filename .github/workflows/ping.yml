@@ -41,6 +41,9 @@ jobs:
       - name: Fix file permissions
         run: |
           chmod +x bot.py
+      - name: download
+        run: |
+          apt install screen
 
       # Chạy bot.py
       - name: Run the bot
